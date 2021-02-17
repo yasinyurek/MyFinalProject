@@ -35,8 +35,8 @@ namespace WebAPI
             // eðerki biri constructur da IProductService istenirse senden onun istediði ProductManager dir. 
             //Ona bunu ver demek. bizim için new liyiyor.
             //Singleton u içinde data tutmayan durumlar için kullanýlýr.
-            services.AddSingleton<IProductService, ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService, ProductManager>();
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
