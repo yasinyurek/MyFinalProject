@@ -47,12 +47,13 @@ namespace Core.Utilities.Security.JWT
                 issuer: tokenOptions.Issuer,
                 audience: tokenOptions.Audience,
                 expires: _accessTokenExpiration,
-                notBefore: DateTime.Now,
+                //notBefore: DateTime.Now,
                 claims: SetClaims(user, operationClaims),
                 signingCredentials: signingCredentials
             );
             return jwt;
         }
+
 
         private IEnumerable<Claim> SetClaims(User user, List<OperationClaim> operationClaims)
         {
